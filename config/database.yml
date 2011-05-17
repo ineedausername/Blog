@@ -1,8 +1,7 @@
 development:
   adapter: postgresql
   database: blog_development
-  username: exist
-  password: 123qwe
+  username: ichigo
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -11,13 +10,6 @@ development:
 test: &test
   adapter: postgresql
   database: blog_test
-  username: exist
-  password: 123qwe
+  username: ichigo
   host: localhost
 
-production:
-  adapter: postgresql
-  database: blog_production
-  username: exist
-  password: 123qwe
-  host: localhost

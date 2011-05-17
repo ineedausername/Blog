@@ -1,20 +1,24 @@
 <p>
   <strong>First Name:</strong>
-  <%= @authors.first_name %>
+  <%= @author.first_name %>
 </p>
 <p>
   <strong>Last Name:</strong>
-  <%= @authors.last_name %>
+  <%= @author.last_name %>
 </p>
 <p>
   <strong>Remarks:</strong>
-  <%= @authors.remarks %>
+  <%= @author.remarks %>
 </p>
 <p>
   <strong>Birthday:</strong>
-  <%= @authors.birthday %>
+  <%= @author.birthday %>
 </p>
 
-<%= link_to 'Show articles', author_articles_path(@authors) %> |
-<%= link_to 'Edit', edit_author_path(@authors) %> |
-<%= link_to 'Back', authors_path %>
+<%= image_tag @author.avatar.url(:medium) %>
+<%= image_tag @author.avatar.url(:thumb) %>
+<%= image_tag @author.avatar.url(:original) %>
+
+<%= link_to 'Show articles', author_articles_path(@author) %> |
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', author_path %>
